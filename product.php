@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
 <body>
-    <div>
+    <div class="container mt-5">
         <h1>product</h1>
     </div>
 </body>
