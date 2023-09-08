@@ -17,23 +17,26 @@
         <div class="header  mb-5">
             <?php include "components/navBar.php"?>
         </div>
-        <div class="row">
-        <?php foreach($products as $product)?>
+        <div class="row g-4">
+            <?php foreach($products as $product){?>
             <div class="col-md-4">
-                <div class="card text-center shadow-sm h-100 w-100">
+                <div class="card text-center shadow-sm h-100 w-80 ">
                     <div class="card-img-top ">
                         <img src="assets/images/<?php echo $product['image']?>" class="img-fluid">
                     </div>
                     <div class="card-body">
                         <b><?php echo $product['name']?></b>
                         <p>$<?php echo $product['price']?></p>
+                        <a href="product.php" class="btn btn-primary">View</a>
                     </div>
                 </div>
             </div>
+            <?php
+            }?>
         </div>
     </div>
     <div class="footer bg-dark text-light mt-5 text-center">
-            <b>Contact Address</b>
+            <b>Contact Address :</b>
             <p>Benue State,Nigeria.</p>
             <p>email:ogwucheabraham08@gmail.com</p>
             <p>copywrite@G3ENTERPRISE2023</p>

@@ -12,18 +12,18 @@
     <div class="container-fluid d-flex nav-brand">
       <b>G3 ENTERPRISE</b>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a href="index.php" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-          <a href="registeration.php" class="nav-link">SignUp</a>
-          </li>
-          <li class="nav-item">
-          <a href="login.php" class="nav-link">SignIn</a>
+          <a href="about.php" class="nav-link">About</a>
           </li>
           <li class="nav-item">
             <a href="products.php" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+          <a href="cart.php" class="nav-link">Cart</a>
           </li>
         </ul>
       </div>
