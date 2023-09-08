@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="header">
-            <?php include "components/navBar.php"?>
-        </div>
-        <div class="content">
+    <?php include "components/navBar.php"?>
+    <div class="container">
             <div class="text-center mt-5">
                 <h2>About us</h2>
                 <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ratione excepturi neque nostrum soluta! Voluptatum illo non doloremque sit corrupti dolore assumenda tempora voluptates repellat ipsam. Libero repellendus dolore deleniti.</P>  
@@ -63,12 +60,6 @@
                 </div>
             </div>
         </div>
-        <div class="footer bg-dark text-light mt-5 text-center">
-            <b>Contact Address :</b>
-            <p>Benue State,Nigeria.</p>
-            <p>email:ogwucheabraham08@gmail.com</p>
-            <p>copywrite@G3ENTERPRISE2023</p>
-        </div>
-    </div>
+    <?php include "components/footer.php" ?>
 </body>
 </html>

@@ -13,21 +13,20 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="header  mb-5">
-            <?php include "components/navBar.php"?>
-        </div>
-        <div class="row g-4">
+    <?php include "components/navBar.php"?>
+    <div class="container">
+        <b class="mt-5">Get your phones and accesseries from the comfort of your home at a good and affordable price</b>
+        <div class="row g-4 mt-5">
             <?php foreach($products as $product){?>
             <div class="col-md-4">
-                <div class="card text-center shadow-sm h-100 w-80 ">
+                <div class="card text-center shadow-sm h-100 w-80">
                     <div class="card-img-top ">
                         <img src="assets/images/<?php echo $product['image']?>" class="img-fluid">
                     </div>
                     <div class="card-body">
                         <b><?php echo $product['name']?></b>
                         <p>$<?php echo $product['price']?></p>
-                        <a href="product.php" class="btn btn-primary">View</a>
+                        <a href="product.php?id=<?php echo $product['id']?>"  class="btn btn-primary">View</a>
                     </div>
                 </div>
             </div>
@@ -35,11 +34,6 @@
             }?>
         </div>
     </div>
-    <div class="footer bg-dark text-light mt-5 text-center">
-            <b>Contact Address :</b>
-            <p>Benue State,Nigeria.</p>
-            <p>email:ogwucheabraham08@gmail.com</p>
-            <p>copywrite@G3ENTERPRISE2023</p>
-        </div>
+    <?php include "components/footer.php" ?>
 </body>
 </html>

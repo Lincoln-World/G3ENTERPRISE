@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark mb-5">
     <div class="container-fluid d-flex nav-brand">
       <b>G3 ENTERPRISE</b>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">

@@ -1,3 +1,12 @@
+<?php
+    include "classes/product.php";
+    if(isset($_GET['id'])){
+        $id=$_GET['id'];
+        $products=new Products();
+        $product=$products->getProductById($id);
+    }
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +16,14 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="header">
-            <a class="btn btn-primary" href="products.php">Back</a>
-        </div>
-        <img src="" alt="">
-        <h3></h3>
-        <b>$</b>
-        <p></p>
+    <div class="container">
+        <a class="btn btn-primary mt-5 mb-5" href="products.php">Back</a>
+        <img src="assets/images/<?php echo $product['image']?>" class="img-fluid">
+        <h3><?php echo $product['name']?></h3>
+        <b>$<?php echo $product['price']?></b>
+        <p><?php echo $product['description']?></p>
+        <a class="btn btn-primary mt-5 mb-5" href="products.php">Add to cart</a>
     </div>
+    <?php include "components/footer.php" ?>
 </body>
 </html>
