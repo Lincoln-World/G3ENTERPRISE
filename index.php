@@ -35,8 +35,7 @@
                     <img src="assets/images/image3.jpg" class="img-fluid" alt="">
                 </div>
             </div>
-            <button href="" class="btn btn-primary mt-5 pb-30px">Sign Up</button>
-            <button href="" class="btn btn-primary mt-5">Sign In</button>
+
         </div>
         <div class="footer bg-dark text-light mt-5 text-center">
             <p>copywrite@G3ENTERPRISE2023</p>
