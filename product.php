@@ -22,7 +22,7 @@
         <h3><?php echo $product['name']?></h3>
         <b>$<?php echo $product['price']?></b>
         <p><?php echo $product['description']?></p>
-        <a class="btn btn-primary mt-5 mb-5" href="products.php">Add to cart</a>
+        <a class="btn btn-success mt-5 mb-5">Add to cart</a>
     </div>
     <?php include "components/footer.php" ?>
 </body>

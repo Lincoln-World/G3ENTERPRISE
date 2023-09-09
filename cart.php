@@ -8,11 +8,11 @@
 <body>
     <?php include "components/navBar.php"?>
     <div class="container">
-        <div class="header">
+        <div class="">
 
         </div>
-        <div class="content">
-
+        <div class="">
+            <button class="btn btn-success">Place order</button>
         </div>
     </div>
     <?php include "components/footer.php" ?>
