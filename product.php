@@ -1,9 +1,13 @@
 <?php
-    include "classes/product.php";
+    session_start();
+    include "classes/Product.php";
     if(isset($_GET['id'])){
         $id=$_GET['id'];
         $products=new Products();
         $product=$products->getProductById($id);
+        $_SESSION['id']=$product['id'];
+        $_SESSION['name']=$product['name'];
+        $_SESSION['price']=$product['price']; 
     }
     
 ?>
@@ -16,13 +20,16 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
+    <?php include "components/navBar.php"?>
     <div class="container">
-        <a class="btn btn-primary mt-5 mb-5" href="products.php">Back</a>
         <img src="assets/images/<?php echo $product['image']?>" class="img-fluid">
         <h3><?php echo $product['name']?></h3>
         <b>$<?php echo $product['price']?></b>
         <p><?php echo $product['description']?></p>
-        <a class="btn btn-success mt-5 mb-5">Add to cart</a>
+        <div class="mt-5 mb-5">
+            <a class="btn btn-success" href="processes/add_product.php?id=<?php echo $product['id']?>">Add to cart</a>
+            <a class="btn btn-primary text-end" href="products.php">Back</a>
+        </div>
     </div>
     <?php include "components/footer.php" ?>
 </body>

@@ -1,3 +1,6 @@
+<?php
+    date_default_timezone_set("Africa/Lagos");
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,5 +32,6 @@
       </div>
     </div>
   </nav>
+  <marquee behavior="" direction="">Welcome to G3 ENTERPRISE, your satisfaction is our priority.      <?php echo date('D, d  F, Y   G:i:sa') ?></marquee>
 </body>
 </html>   

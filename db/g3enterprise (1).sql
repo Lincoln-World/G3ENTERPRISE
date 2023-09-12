@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 08, 2023 at 06:57 PM
+-- Generation Time: Sep 12, 2023 at 06:14 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.3.23
 
@@ -35,6 +35,15 @@ CREATE TABLE `cart` (
   `quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`id`, `product_id`, `item_name`, `item_price`, `quantity`) VALUES
+(8, 3, 'Earphone', 20.00, 1),
+(9, 5, 'Charger', 30.00, 1),
+(10, 4, 'Memory card', 50.00, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -43,11 +52,19 @@ CREATE TABLE `cart` (
 
 CREATE TABLE `orders` (
   `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
   `item_name` varchar(50) NOT NULL,
   `quantity` int(11) NOT NULL,
+  `price` double(12,2) NOT NULL,
   `date` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `item_name`, `quantity`, `price`, `date`) VALUES
+(1, 'Earphone', 3, 60.00, '2023-09-12 12:54:09'),
+(2, 'Earphone', 1, 20.00, '2023-09-12 15:40:36');
 
 -- --------------------------------------------------------
 
@@ -109,13 +126,13 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `products`

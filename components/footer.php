@@ -12,7 +12,7 @@
             <b>Contact Address :</b>
             <p>Benue State,Nigeria.</p>
             <p>email:ogwucheabraham08@gmail.com</p>
-            <p>copywrite@G3ENTERPRISE2023</p>
+            <p>copywrite&copyG3ENTERPRISE2023</p>
         </div>
     </div>
 </body>

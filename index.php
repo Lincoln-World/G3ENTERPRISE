@@ -16,19 +16,21 @@
 </head>
 <body>
     <?php include "components/navBar.php"?>
-        <div class="container text-center mt-5">
-            <h1>welcome to G3 ENTERPRISE</h1>
-            <b>Giving you the best shopping experience</b>
-            <img src="assets/images/image1.jpg" class="img-fluid mt-5 mb-5" alt="">
+        <div class="container-fluid mt-5">
+            <div class="text-center">
+                <h1>G3 ENTERPRISE</h1>
+                <b>Giving you the best shopping experience</b>
+            </div>
+            <img src="assets/images/image1.jpg" class="img-fluid mt-5 mb-5">
             <div class="row mt-5">
                 <div class="col-md-4">
-                    <img src="assets/images/earpod1.jpg" class="img-fluid" alt="">
+                    <img src="assets/images/earpod1.jpg" class="img-fluid">
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/images/image3.jpg" class="img-fluid" alt="">
+                    <img src="assets/images/image3.jpg" class="img-fluid">
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/images/earpiece.jpg" class="img-fluid" alt="">
+                    <img src="assets/images/earpiece.jpg" class="img-fluid">
                 </div>
             </div>
         </div>
