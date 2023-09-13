@@ -51,7 +51,6 @@
             <h5>RECENT ORDERS</h5>
             <table class="table">
                 <tr>
-                    <th>s/n</th>
                     <th>Product</th>
                     <th>Quantity</th>
                     <th>price</th>
@@ -59,7 +58,6 @@
                 </tr>
                 <?php foreach($oders as $order){?>
                 <tr>
-                    <td><?php echo $order['id']?></td>
                     <td><?php echo $order['item_name']?></td>
                     <td><?php echo $order['quantity']?></td>
                     <td><?php echo $order['price']?></td>

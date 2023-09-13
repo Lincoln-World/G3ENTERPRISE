@@ -7,8 +7,13 @@
         $product=$products->getProductById($id);
         $_SESSION['id']=$product['id'];
         $_SESSION['name']=$product['name'];
-        $_SESSION['price']=$product['price']; 
+        $_SESSION['price']=$product['price'];
+        
+        $product_category=$product['category'];
     }
+
+
+    if($product_category===)
     
 ?>
 <!DOCTYPE html>
