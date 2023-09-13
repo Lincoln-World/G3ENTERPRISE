@@ -75,5 +75,6 @@
             </div>
         </div>
     <?php include "components/footer.php" ?>
+    <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>

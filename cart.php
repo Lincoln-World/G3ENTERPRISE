@@ -73,6 +73,7 @@
             </div> -->
         </div> 
     </div>
+    <script src="assets/js/bootstrap.bundle.js"></script>
     <?php include "components/footer.php" ?>
 </body>
 </html>

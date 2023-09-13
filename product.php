@@ -26,11 +26,13 @@
         <h3><?php echo $product['name']?></h3>
         <b>$<?php echo $product['price']?></b>
         <p><?php echo $product['description']?></p>
+ 
         <div class="mt-5 mb-5">
             <a class="btn btn-success" href="processes/add_product.php?id=<?php echo $product['id']?>">Add to cart</a>
             <a class="btn btn-primary text-end" href="products.php">Back</a>
         </div>
     </div>
     <?php include "components/footer.php" ?>
+    <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
