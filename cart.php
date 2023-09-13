@@ -4,7 +4,7 @@
     $cart_instance = new Cart();
     $items=$cart_instance->getAllCartItems();
     $oders=$cart_instance->getAllOders();
-    
+    $clear=$cart_instance->removeAllFromOrder();
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,9 +68,9 @@
                 <?php
                 }?>
             </table>
-            <!-- <div class="text-end">
-                <button>Clear all records</button>
-            </div> -->
+            <div class="text-end">
+                <a href="">Clear all records</a>
+            </div>
         </div> 
     </div>
     <script src="assets/js/bootstrap.bundle.js"></script>

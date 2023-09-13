@@ -4,8 +4,17 @@
     <style>
         body{
             background-image:url("assets/images/image2.jpg");
-    
         }
+        p{
+            color:white;
+        }
+        .container{
+            color:white;
+        }
+        h5{
+            color:white;
+        }
+        
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +38,7 @@
                 <h2>OUR TEAM</h2>
             </div>
             <div class="row w-50 ">
-                <div class="card transparent mb-3">
+                <div class="card bg-transparent mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="assets/images/member2.jpg" class="img-fluid rounded-start">
@@ -44,7 +53,7 @@
                 </div>
             </div>
             <div class="row w-50 ms-auto">
-                <div class="card mb-3">
+                <div class="card bg-transparent mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="assets/images/member3.jpg" class="img-fluid rounded-start">
@@ -61,7 +70,7 @@
                 </div>
             </div>
             <div class="row w-50">
-                <div class="card mb-3">
+                <div class="card bg-transparent mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="assets/images/member1.jpg" class="img-fluid rounded-start">
@@ -73,6 +82,23 @@
                                     Ogwuche Abraham is a nigerian who hails from Ogbadibo local government area 
                                     of Benue state Nigeria. He is a graduate  of Havilah model college Otukpo, 
                                     Benue state. He is known to have gained expertise in the telecommunication world.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-50 ms-auto">
+                <div class="card bg-transparent mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/images/member4.jpg" class="img-fluid rounded-start">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="">Micheal Shedrach</h5>
+                                <p class="">
+                                    
                                 </p>
                             </div>
                         </div>
