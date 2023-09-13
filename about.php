@@ -11,9 +11,6 @@
         .container{
             color:white;
         }
-        h5{
-            color:white;
-        }
         
     </style>
     <meta charset="UTF-8">
@@ -45,7 +42,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Oche Christopher</h5>
+                                <h5 style="color:white" class="card-title">Oche Christopher</h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                         </div>
@@ -60,7 +57,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Ogah Blessing</h5>
+                                <h5 style="color:white"  class="card-title">Ogah Blessing</h5>
                                 <p class="card-text">
                                 This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                                 </p>
@@ -77,7 +74,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Ogwuche Abraham</h5>
+                                <h5 style="color:white" class="card-title">Ogwuche Abraham</h5>
                                 <p class="card-text">
                                     Ogwuche Abraham is a nigerian who hails from Ogbadibo local government area 
                                     of Benue state Nigeria. He is a graduate  of Havilah model college Otukpo, 
@@ -96,7 +93,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="">Micheal Shedrach</h5>
+                                <h5 style="color:white" class="">Micheal Shedrach</h5>
                                 <p class="">
                                     
                                 </p>
