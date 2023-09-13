@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body{
+            background-image:url("assets/images/image2.jpg");
+    
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
@@ -23,7 +29,7 @@
                 <h2>OUR TEAM</h2>
             </div>
             <div class="row w-50 ">
-                <div class="card mb-3">
+                <div class="card transparent mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="assets/images/member2.jpg" class="img-fluid rounded-start">
