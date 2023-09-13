@@ -11,9 +11,6 @@
         
         $product_category=$product['category'];
     }
-
-
-    if($product_category===)
     
 ?>
 <!DOCTYPE html>
