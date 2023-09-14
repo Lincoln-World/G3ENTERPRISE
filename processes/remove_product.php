@@ -12,9 +12,7 @@
             $reduce=$cart_instance->reduceQuantity($price,$id);
                 if($reduce){
                     header("Location: ../cart.php");
-                }else{
-                    
-                    header("Location: ../cart.php");
+                    exit();
                 }
         }else{
             $result=$cart_instance->removeFromCart($id);
@@ -29,20 +27,3 @@
     }
     
 ?>
-
-
-
-    include "../classes/Cart.php";
-    if(isset($_GET['id'])){
-        $id=$_GET['id'];
-        
-        $cart_instance=new Cart();
-        
-        if($result){
-            $_SESSION['success']='Product successfully updated';
-            header("Location: ../cart.php");
-        }else{
-            $_SESSION['error']='Something went wrong';
-            header("Location: ../cart.php");
-        }
-    }

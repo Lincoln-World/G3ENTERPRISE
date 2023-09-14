@@ -10,7 +10,7 @@
         $result=$cart_instance->getCartItemById($product_id);
         $cart_poduct_id=$result['product_id'];
         if($product_id === $cart_poduct_id){
-            $_SESSION['success']='Product already added to cart, please update';
+            $_SESSION['success']='Product already exist, please update quantity';
             header("Location: ../cart.php");
         }else{
             $added=$cart_instance->addToCart($product_id,$item_name,$item_price);

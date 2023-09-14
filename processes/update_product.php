@@ -7,11 +7,8 @@
         $cart_instance=new Cart();
         $result=$cart_instance->increaseQuantity($price,$id);
         if($result){
-            $_SESSION['success']='Product successfully updated';
             header("Location: ../cart.php");
-        }else{
-            $_SESSION['error']='Something went wrong';
-            header("Location: ../cart.php");
+            exit();
         }
     }
     

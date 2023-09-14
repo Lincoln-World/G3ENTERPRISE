@@ -80,7 +80,7 @@
 
         public function getAllOders(){
             include "config/db-connect.php";
-            $sql="SELECT * FROM `orders` ORDER BY date DESC";
+            $sql="SELECT * FROM `orders` GROUP BY date ORDER BY id DESC";
             $stmt=$pdo->prepare($sql);
             $stmt->execute();
             $result=$stmt->fetchAll(PDO::FETCH_ASSOC);

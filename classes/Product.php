@@ -17,6 +17,17 @@
             $result=$stmt->fetch(PDO::FETCH_ASSOC);
             return $result;
         }
+
+
+
+        public function getProductByCategory($category){
+            include "config/db-connect.php";
+            $sql="SELECT * FROM `products` WHERE category!=?";
+            $stmt=$pdo->prepare($sql);
+            $stmt->execute([$category]);
+            $result=$stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
+        }
     }
 ?>
 
