@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body{
-            background-image:url("assets/images/image2.jpg");
-        }
-        p{
-            color:white;
-        }
-        .container{
-            color:white;
-        }
-        
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
@@ -38,14 +26,14 @@
                 <h2>OUR TEAM</h2>
             </div>
             <div class="row w-50 ms-auto ">
-                <div class="card bg-transparent mb-3">
+                <div class="card shadow-lg mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="assets/images/member2.jpg" class="img-fluid rounded-start">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 style="color:white" class="card-title">Oche Christopher</h5>
+                                <h5 class="card-title">Oche Christopher</h5>
                                 <p class="card-text">My name is Oche Christopher i'm from Ogbadibo Local Government Area of Benue State Nigeria
                                     i'm a family of 8 my parent gave birth to six of, us we are all boys  .</p>
                             </div>
@@ -54,14 +42,14 @@
                 </div>
             </div>
             <div class="row w-50">
-                <div class="card bg-transparent mb-3">
+                <div class="card shadow-lg mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="assets/images/member3.jpg" class="img-fluid rounded-start">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 style="color:white"  class="card-title">Ogah Blessing</h5>
+                                <h5 class="card-title">Ogah Blessing</h5>
                                 <p class="card-text">
                                   <span>Ogah Ochoyona Blessing hails from Omutele Oglewu Ohimini local government 
                                     arae Benue state Nigeria , she is a student of otukpo Tech Academy learning
@@ -74,14 +62,14 @@
                 </div>
             </div>
             <div class="row w-50 ms-auto">
-                <div class="card bg-transparent mb-3">
+                <div class="card shadow-lg mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="assets/images/member1.jpg" class="img-fluid rounded-start">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 style="color:white" class="card-title">Ogwuche Abraham</h5>
+                                <h5 class="card-title">Ogwuche Abraham</h5>
                                 <p class="card-text">
                                     Ogwuche Abraham is a nigerian who hails from Ogbadibo local government area 
                                     of Benue state Nigeria. He is a graduate  of Havilah model college Otukpo, 
@@ -93,14 +81,14 @@
                 </div>
             </div>
             <div class="row w-50">
-                <div class="card bg-transparent mb-3">
+                <div class="card mb-3 shadow-lg">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="assets/images/member4.jpg" class="img-fluid rounded-start">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 style="color:white" class="">Micheal Shedrach Onuh</h5>
+                                <h5 class="">Micheal Shedrach Onuh</h5>
                                 <p>Michael Shedrach Onuh is a Nigerian who roots from Okpokwu Local Government Area Benue State Nigeria,
                                     He's from a family of 8, being the second child and the first male child of the family,
                                     He graduated from Success Academy Otukpo Benue State Nigeria
@@ -116,5 +104,6 @@
         </div>
     <?php include "components/footer.php" ?>
     <script src="assets/js/bootstrap.bundle.js"></script>
+    
 </body>
 </html>

@@ -60,7 +60,8 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/bootstrap.bundle.js"></script>
     <?php include "components/footer.php" ?>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

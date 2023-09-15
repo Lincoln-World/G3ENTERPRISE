@@ -15,7 +15,7 @@
 </head>
 <body>
     <?php include "components/navBar.php"?>
-    <div class="container mt-5">
+    <div class="container text-center mt-5">
         <div class="alert">
             <?php
                 if(isset($_SESSION['error'])){

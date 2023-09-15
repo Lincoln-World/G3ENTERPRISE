@@ -32,13 +32,14 @@
 <body>
     <?php include "components/navBar.php"?>
     <div class="container mt-5">
+        <h2><?php $product['id']?></h2>
         <img src="assets/images/<?php echo $product['image']?>" class="img-fluid w-50">
         <h3><?php echo $product['name']?></h3>
         <b>$<?php echo $product['price']?></b>
         <p><?php echo $product['description']?></p>
  
         <div class="mt-5 mb-5 text-end">
-            <a class="btn btn-success" href="processes/add_product.php?id=<?php echo $product['id']?>">Add to cart</a>
+            <a class="add-to-cart-btn btn btn-success">Add to cart</a>
             <a class="btn btn-secondary" href="products.php">Back</a>
         </div>
         <div class="mb-3">
@@ -60,5 +61,6 @@
     
     <?php include "components/footer.php" ?>
     <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

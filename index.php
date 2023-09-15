@@ -16,16 +16,16 @@
 </head>
 <body>
     <?php include "components/navBar.php"?>
-        <div class="container-fluid mt-5">
+        <div class="container mt-5">
             <div class="text-center">
                 <h1>G3 ENTERPRISE</h1>
                 <b>Giving you the best shopping experience</b>
-            </div>
+            </div class="text-center">
             <img src="assets/images/image1.jpg" class="img-fluid mt-5 mb-5">
             <div class="text-center">
                 <b>Get the best and latest phones and accesseries here</b>
             </div>
-            <div class="row mt-5">
+            <div class="row text-center mt-5">
                 <div class="col-md-4">
                     <img src="assets/images/earpod1.jpg" class="img-fluid">
                 </div>
