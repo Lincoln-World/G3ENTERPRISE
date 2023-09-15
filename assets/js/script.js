@@ -54,6 +54,7 @@ class LocalCart{
 
 const addToCartBtns = document.querySelectorAll('.add-to-cart-btn')
 addToCartBtns.addEventListener('click', addItemFunction())
-function addItemFunction(e){
+
+function addItemFunction(e) {
     console.log(e.target)    
 }

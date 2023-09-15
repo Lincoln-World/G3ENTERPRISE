@@ -22,7 +22,7 @@
 
         public function getProductByCategory($category){
             include "config/db-connect.php";
-            $sql="SELECT * FROM `products` WHERE category!=?";
+            $sql="SELECT * FROM `products` WHERE category!=? LIMIT 3";
             $stmt=$pdo->prepare($sql);
             $stmt->execute([$category]);
             $result=$stmt->fetchAll(PDO::FETCH_ASSOC);

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <?php include "components/navBar.php"?>
@@ -35,7 +36,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">Oche Christopher</h5>
                                 <p class="card-text">My name is Oche Christopher i'm from Ogbadibo Local Government Area of Benue State Nigeria
-                                    i'm a family of 8 my parent gave birth to six of, us we are all boys  .</p>
+                                    i'm from a family of 8 my parent gave birth to six of, us we are all boys my favorite sport is baskestball
+                                    i just graduated from secondary school last year, i thank this association for this privilage to learn programming
+                                    and i have acquired from here.</p>
                             </div>
                         </div>
                     </div>
@@ -81,7 +84,7 @@
                 </div>
             </div>
             <div class="row w-50">
-                <div class="card mb-3 shadow-lg">
+                <div class="card mb-5 shadow-lg">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="assets/images/member4.jpg" class="img-fluid rounded-start">
@@ -90,7 +93,6 @@
                             <div class="card-body">
                                 <h5 class="">Micheal Shedrach Onuh</h5>
                                 <p>Michael Shedrach Onuh is a Nigerian who roots from Okpokwu Local Government Area Benue State Nigeria,
-                                    He's from a family of 8, being the second child and the first male child of the family,
                                     He graduated from Success Academy Otukpo Benue State Nigeria
                                     And further moved to United Secondary School Otukpo Benue State Nigeria where he obtained my 0-level result.
                                     He acquired a 6 month basic computer training at Universal CyberNet Limited
@@ -100,6 +102,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center mt-5">
+                <h2>Contact Us :</h2>
+                <p>Benue state, Nigeria.</p>
+                <p>email: Ogwucheabraham08@gmail.com</p>
             </div>
         </div>
     <?php include "components/footer.php" ?>

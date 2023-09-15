@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <?php include "components/navBar.php"?>
@@ -34,7 +35,8 @@
             <h3>Total price: $<?php echo implode($cart_instance->totalPrice());?></h3>
         </div>
         <div class="mt-5 text-right">
-            <a class="btn btn-success" href="processes/orders.php">Place order</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">place Order</button>
         </div>
         <div class="text-center mt-5 mb-5">
             <h5>RECENT ORDERS</h5>
@@ -60,6 +62,7 @@
             </div>
         </div>
     </div>
+    <?php include "components/formModal.php" ?>
     <?php include "components/footer.php" ?>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/script.js"></script>
