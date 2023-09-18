@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 15, 2023 at 12:38 PM
+-- Generation Time: Sep 18, 2023 at 08:08 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.3.23
 
@@ -29,19 +29,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cart` (
   `id` int(11) NOT NULL,
-  `user_name` varchar(100) NOT NULL,
   `product_id` int(11) NOT NULL,
   `item_name` varchar(50) NOT NULL,
   `item_price` double(12,2) NOT NULL,
   `quantity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`id`, `user_name`, `product_id`, `item_name`, `item_price`, `quantity`) VALUES
-(31, '', 4, 'Memory card', 50.00, 1);
 
 -- --------------------------------------------------------
 
@@ -54,23 +46,10 @@ CREATE TABLE `orders` (
   `item_name` varchar(50) NOT NULL,
   `quantity` int(11) NOT NULL,
   `price` double(12,2) NOT NULL,
-  `date` datetime NOT NULL DEFAULT current_timestamp(),
-  `description` varchar(100) NOT NULL,
   `user_name` varchar(100) NOT NULL,
-  `address` varchar(100) NOT NULL
+  `address` varchar(100) NOT NULL,
+  `date` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `orders`
---
-
-INSERT INTO `orders` (`id`, `item_name`, `quantity`, `price`, `date`, `description`, `user_name`, `address`) VALUES
-(1, 'Earphone', 2, 40.00, '2023-09-13 14:50:02', 'dd', ' nn', ''),
-(2, 'Iphone x', 1, 220000.00, '2023-09-13 15:14:45', 'dd', 'nn', ''),
-(3, 'Earphone', 1, 20.00, '2023-09-13 21:16:34', 'dd', 'nn', ''),
-(4, 'Charger', 1, 30.00, '2023-09-13 21:16:34', '', '', ''),
-(6, 'Power bank', 1, 50.00, '2023-09-13 21:20:40', '', '', ''),
-(7, 'Memory card', 1, 50.00, '2023-09-13 21:20:40', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -133,13 +112,13 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `products`

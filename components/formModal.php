@@ -8,11 +8,9 @@
       <div class="modal-body">
         <form action="processes/orders.php" method="post">
             <label>Enter name</label>
-            <input type="text" class="form-control" require>
+            <input type="text" name="user_name" class="form-control" require>
             <label>Enter delivery address</label>
-            <input type="text" class="form-control" require>
-            <label>Add description</label>
-            <input type="text" class="form-control" require>
+            <input type="text" name="address" class="form-control" require>
             <button type="button" name="order" class="btn btn-success mt-5">Confirm Order</button>
         </form>
       </div>

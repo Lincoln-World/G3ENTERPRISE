@@ -13,7 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <?php include "components/navBar.php"?>
@@ -65,6 +64,5 @@
     <?php include "components/formModal.php" ?>
     <?php include "components/footer.php" ?>
     <script src="assets/js/bootstrap.bundle.js"></script>
-    <script src="assets/js/script.js"></script>
 </body>
 </html>

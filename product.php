@@ -32,11 +32,12 @@
 <body>
     <?php include "components/navBar.php"?>
     <div class="container mt-5">
-        <img src="assets/images/<?php echo $product['image']?>" class="img-fluid w-50">
-        <h3><?php echo $product['name']?></h3>
-        <b>$<?php echo $product['price']?></b>
-        <p><?php echo $product['description']?></p>
- 
+        <div class="text-center">
+            <img src="assets/images/<?php echo $product['image']?>" class="img-fluid w-50">
+            <h3><?php echo $product['name']?></h3>
+            <b>$<span><?php echo $product['price']?></span></b>
+            <p><?php echo $product['description']?></p>
+        </div>
         <div class="mt-5 mb-5 text-end">
             <a class="add-to-cart btn btn-success" href="processes/add_product.php?id=<?php echo $product['id']?>">Add to cart</a>
             <a class="btn btn-secondary" href="products.php">Back</a>
@@ -50,7 +51,7 @@
                     <td><img src="assets/images/<?php echo $product['image']?>" class="img-fluid"></td>
                     <td><?php echo $product['name']?></td>
                     <td>$<?php echo $product['price']?></td>
-                    <td><a href="" class="btn btn-primary">Add</a></td>
+                    <td><a href="#" class="btn btn-primary">Add</a></td>
                 </tr>
                 <?php
                 }?>
