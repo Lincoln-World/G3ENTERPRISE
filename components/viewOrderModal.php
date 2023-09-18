@@ -6,10 +6,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="processes/placeOrders.php" method="post">
+        <form action="processes/viewOrders.php" method="post">
             <label>Please enter user_name</label>
             <input type="text" name="user_name" class="form-control" require>
-            <button type="submit" name="order" class="btn btn-success mt-5">Confirm Order</button>
+            <button type="submit" name="view" class="btn btn-success mt-5">Confirm Order</button>
         </form>
       </div>
     </div>

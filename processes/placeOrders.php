@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include "../classes/Cart.php";
     $cart_instance = new Cart();
     if(isset($_POST['order'])){

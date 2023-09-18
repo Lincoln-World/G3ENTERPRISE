@@ -2,6 +2,8 @@
     session_start();
     include "classes/Cart.php";
     $cart_instance = new Cart();
+
+
     $oders=$cart_instance->getAllOders();
     $clear=$cart_instance->removeAllFromOrder();
 
@@ -28,17 +30,21 @@
             <h5 class="mb-5">RECENT ORDERS</h5>
             <table class="table">
                 <tr>
+                    <th>description</th>
                     <th>Product</th>
                     <th>Quantity</th>
                     <th>price</th>
                     <th>Date/Time</th>
+                    <th></th>
                 </tr>
                 <?php foreach($oders as $order){?>
                 <tr>
+                    <td><?php echo $order['description']?></td>
                     <td><?php echo $order['item_name']?></td>
                     <td><?php echo $order['quantity']?></td>
-                    <td><?php echo $order['price']?></td>
+                    <td><?php echo $order['delivery_address']?></td>
                     <td><?php echo $order['date']?></td>
+                    <td><a class="btn btn-primary" href="">View more</a></td>
                 </tr>
                 <?php
                 }?>

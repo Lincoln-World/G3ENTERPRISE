@@ -35,7 +35,7 @@
         <div class="mt-5 text-right">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">place Order</button>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#example2Modal">View Orders</button>
+            <a href="orders.php" class="btn btn-success">viewOrders</a>
         </div>
     </div>
     <?php include "components/formModal.php" ?>
