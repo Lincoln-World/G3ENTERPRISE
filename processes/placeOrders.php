@@ -5,6 +5,7 @@
         $user=$_POST['user_name'];
         $address=$_POST['address'];
         $description=$_POST['description'];
+        $cart_instance->insertIntoUsers($user,$address,$description);
         $cart_instance->placeOrder();
         $order=$cart_instance->removeAllFromCart();
         if($order){
@@ -16,4 +17,4 @@
         }
     }
 
-?>
+?> 

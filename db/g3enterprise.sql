@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 18, 2023 at 08:08 AM
+-- Generation Time: Sep 18, 2023 at 06:21 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.3.23
 
@@ -47,9 +47,26 @@ CREATE TABLE `orders` (
   `quantity` int(11) NOT NULL,
   `price` double(12,2) NOT NULL,
   `user_name` varchar(100) NOT NULL,
-  `address` varchar(100) NOT NULL,
+  `delivery_address` varchar(100) NOT NULL,
+  `description` varchar(100) NOT NULL,
   `date` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `item_name`, `quantity`, `price`, `user_name`, `delivery_address`, `description`, `date`) VALUES
+(1, 'Earpod', 20, 1.00, 'john', 'dssfdgfdhkjl', 'afsgdjfueielwdldldro', '2023-09-18 17:01:05'),
+(2, 'Infinix', 300000, 1.00, 'john', 'dssfdgfdhkjl', 'afsgdjfueielwdldldro', '2023-09-18 17:04:20'),
+(3, 'Infinix', 300000, 1.00, 'eieiei', 'qiwieeiririr', 'iweiririitttoyoyoyoyoyouo', '2023-09-18 17:04:20'),
+(5, 'Memory card', 1, 50.00, 'john', 'dssfdgfdhkjl', 'afsgdjfueielwdldldro', '2023-09-18 17:08:28'),
+(6, 'Memory card', 1, 50.00, 'eieiei', 'qiwieeiririr', 'iweiririitttoyoyoyoyoyouo', '2023-09-18 17:08:28'),
+(7, 'Memory card', 1, 50.00, 'isreal', 'skdkdfkf', 'asskdkkfkfkflflflflll', '2023-09-18 17:08:28'),
+(8, 'Charger', 1, 30.00, 'john', 'dssfdgfdhkjl', 'afsgdjfueielwdldldro', '2023-09-18 17:18:40'),
+(9, 'Charger', 1, 30.00, 'eieiei', 'qiwieeiririr', 'iweiririitttoyoyoyoyoyouo', '2023-09-18 17:18:40'),
+(10, 'Charger', 1, 30.00, 'isreal', 'skdkdfkf', 'asskdkkfkfkflflflflll', '2023-09-18 17:18:40'),
+(11, 'Charger', 1, 30.00, 'john', 'skdkdfkf', 'iweiririitttoyoyoyoyoyouo', '2023-09-18 17:18:40');
 
 -- --------------------------------------------------------
 
@@ -82,6 +99,29 @@ INSERT INTO `products` (`id`, `image`, `name`, `description`, `price`, `category
 (9, 'phone1.jpg', 'Samsung', 'Samsung Electronics inspires the world and shapes the future with transformative ideas and technologies. The company is redefining the worlds of TVs, smartphones, wearable devices, tablets, digital appliances, network systems, and memory, system LSI, foundry and LED solutions.\r\n\r\nTo strengthen synergies among the diverse businesses and create differentiated products and services, Samsung operates under two core divisions: DX (Device eXperience), which includes businesses for Visual Display, Digital Appliances, Mobile eXperience, Networks, and Health & Medical Equipment; and DS (Device Solutions), which consists of Memory, System LSI, and Foundry businesses.', 1200000.00, 'phone'),
 (10, 'phone pouch.jpg', 'Phone pouch', 'A cell phone case is a highly advantageous protective cover that is specifically engineered to provide optimal safeguarding against any potential damage incurred by mobile devices that may result from a multitude of factors such as accidents or the natural course of wear and tear.', 20.00, 'accessaries');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `description` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `address`, `description`) VALUES
+(1, 'john', 'dssfdgfdhkjl', 'afsgdjfueielwdldldro'),
+(2, 'eieiei', 'qiwieeiririr', 'iweiririitttoyoyoyoyoyouo'),
+(3, 'isreal', 'skdkdfkf', 'asskdkkfkfkflflflflll'),
+(4, 'john', 'skdkdfkf', 'iweiririitttoyoyoyoyoyouo');
+
 --
 -- Indexes for dumped tables
 --
@@ -105,6 +145,12 @@ ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -112,19 +158,25 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

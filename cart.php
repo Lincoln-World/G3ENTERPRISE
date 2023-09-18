@@ -3,8 +3,7 @@
     include "classes/Cart.php";
     $cart_instance = new Cart();
     $items=$cart_instance->getAllCartItems();
-    $oders=$cart_instance->getAllOders();
-    $clear=$cart_instance->removeAllFromOrder();
+
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +15,7 @@
 </head>
 <body>
     <?php include "components/navBar.php"?>
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="alert">
             <?php
                 if(isset($_SESSION['error'])){
@@ -36,32 +35,11 @@
         <div class="mt-5 text-right">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">place Order</button>
-        </div>
-        <div class="text-center mt-5 mb-5">
-            <h5>RECENT ORDERS</h5>
-            <table class="table">
-                <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>price</th>
-                    <th>Date/Time</th>
-                </tr>
-                <?php foreach($oders as $order){?>
-                <tr>
-                    <td><?php echo $order['item_name']?></td>
-                    <td><?php echo $order['quantity']?></td>
-                    <td><?php echo $order['price']?></td>
-                    <td><?php echo $order['date']?></td>
-                </tr>
-                <?php
-                }?>
-            </table>
-            <div class="text-end">
-                <a href="">Clear all records</a>
-            </div>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#example2Modal">View Orders</button>
         </div>
     </div>
     <?php include "components/formModal.php" ?>
+    <?php include "components/viewOrderModal.php" ?>
     <?php include "components/footer.php" ?>
     <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
